@@ -12,7 +12,7 @@ export class AppComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
   navs = [
-    { title: 'training', icon: 'event_note' },
+    { title: 'trainings', icon: 'event_note' },
     { title: 'paddlers', icon: 'wc' },
     { title: 'leaderboard', icon: 'equalizer' },
   ];

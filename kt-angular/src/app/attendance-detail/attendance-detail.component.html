@@ -1,4 +1,4 @@
-<div class="d-flex flex-wrap">
+<!-- <div class="d-flex flex-wrap">
     <div>CYM<br>AK 09</div>
     <div>JIAJUN<br>White Kape</div>
     <div>PM<br>Sete</div>
@@ -16,4 +16,53 @@
     <div>Weekiat<br>V3</div>
     <div>Kaijie<br>Rapt 06</div>
     <div>Nizal<br>Auggy's boat</div>
+</div> -->
+
+<!-- <div class="d-flex flex-wrap">
+    <div *ngFor="let a of attendances" matTooltip="{{ a.boat.shortname + ' (CA' + a.boat.ca + ')' | uppercase }}">
+        {{a.paddler.shortname | uppercase }}
+        <br>
+        <span class="badge badge-primary">
+            {{a.boat.shortname}}
+        </span>
+    </div>
+</div> -->
+
+<div class="mat-subheading-1">Attendance:</div>
+<div class="d-flex flex-wrap">
+    <div *ngFor="let a of attendances">
+        <h4>
+            <span class="badge badge-pill badge-primary" matTooltip="{{ a.boat.shortname + ' (CA' + a.boat.ca + ')' | uppercase }}">
+                {{a.paddler.shortname | uppercase }} <span class="color-primary-blue">{{a.boat.shortname}}</span>
+            </span>
+        </h4>
+    </div>
+    <div *ngFor="let a of attendances">
+        <h4>
+            <span class="badge badge-pill badge-primary" matTooltip="{{ a.boat.shortname + ' (CA' + a.boat.ca + ')' | uppercase }}">
+                    {{a.paddler.shortname | uppercase }} <span class="color-primary-blue">{{a.boat.shortname}}</span>
+            </span>
+        </h4>
+    </div>
+    <div *ngFor="let a of attendances">
+        <h4>
+            <span class="badge badge-pill badge-primary" matTooltip="{{ a.boat.shortname + ' (CA' + a.boat.ca + ')' | uppercase }}">
+                    {{a.paddler.shortname | uppercase }} <span class="color-primary-blue">{{a.boat.shortname}}</span>
+            </span>
+        </h4>
+    </div>
+    <div *ngFor="let a of attendances">
+        <h4>
+            <span class="badge badge-pill badge-primary" matTooltip="{{ a.boat.shortname + ' (CA' + a.boat.ca + ')' | uppercase }}">
+                        {{a.paddler.shortname | uppercase }} <span class="color-primary-blue">{{a.boat.shortname}}</span>
+            </span>
+        </h4>
+    </div>
+    <div *ngFor="let a of attendances">
+        <h4>
+            <span class="badge badge-pill badge-primary" matTooltip="{{ a.boat.shortname + ' (CA' + a.boat.ca + ')' | uppercase }}">
+                            {{a.paddler.shortname | uppercase }} <span class="color-primary-blue">{{a.boat.shortname}}</span>
+            </span>
+        </h4>
+    </div>
 </div>

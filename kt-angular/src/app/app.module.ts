@@ -5,22 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { TrainingComponent } from './training/training.component';
 import { PaddlersComponent } from './paddlers/paddlers.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AttendanceDetailComponent } from './attendance-detail/attendance-detail.component';
-import { ProgramDetailComponent } from './program-detail/program-detail.component';
+import { ProgrammeDetailComponent } from './programme-detail/programme-detail.component';
+import { TrainingsComponent } from './trainings/trainings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TrainingComponent,
     PaddlersComponent,
     LeaderboardComponent,
     PageNotFoundComponent,
     AttendanceDetailComponent,
-    ProgramDetailComponent,
+    ProgrammeDetailComponent,
+    TrainingsComponent,
   ],
   imports: [
     BrowserModule,
