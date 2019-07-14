@@ -9,6 +9,8 @@ import { TrainingComponent } from './training/training.component';
 import { PaddlersComponent } from './paddlers/paddlers.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AttendanceDetailComponent } from './attendance-detail/attendance-detail.component';
+import { ProgramDetailComponent } from './program-detail/program-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PaddlersComponent,
     LeaderboardComponent,
     PageNotFoundComponent,
+    AttendanceDetailComponent,
+    ProgramDetailComponent,
   ],
   imports: [
     BrowserModule,
