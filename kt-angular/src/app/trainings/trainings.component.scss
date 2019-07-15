@@ -1,3 +1,14 @@
 a {
     text-decoration: underline;
 }
+
+.d-flex {
+    // height: 100%;
+    div {
+        margin-right: 0.5rem;
+    }
+}
+
+.row {
+    border-bottom: thin solid #eee;
+}

@@ -8,8 +8,6 @@ import { MaterialModule } from './material/material.module';
 import { PaddlersComponent } from './paddlers/paddlers.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AttendanceDetailComponent } from './attendance-detail/attendance-detail.component';
-import { ProgrammeDetailComponent } from './programme-detail/programme-detail.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 
 @NgModule({
@@ -18,8 +16,6 @@ import { TrainingsComponent } from './trainings/trainings.component';
     PaddlersComponent,
     LeaderboardComponent,
     PageNotFoundComponent,
-    AttendanceDetailComponent,
-    ProgrammeDetailComponent,
     TrainingsComponent,
   ],
   imports: [
