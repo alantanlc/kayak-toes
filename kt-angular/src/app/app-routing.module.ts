@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { TrainingsComponent } from './trainings/trainings.component';
-import { PaddlersComponent } from './paddlers/paddlers.component';
-import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MembersComponent } from './members/members.component';
+import { TimeTrialsComponent } from './time-trials/time-trials.component';
 
 
 const routes: Routes = [
@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: 'trainings/week/:year', component: TrainingsComponent },
   { path: 'trainings/week/:year/:month', component: TrainingsComponent },
   { path: 'trainings/week/:year/:month/:day', component: TrainingsComponent },
-  { path: 'paddlers', component: PaddlersComponent },
-  { path: 'leaderboard', component: LeaderboardComponent },
+  { path: 'members', component: MembersComponent },
+  { path: 'timetrials', component: TimeTrialsComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
