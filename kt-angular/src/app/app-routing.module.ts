@@ -8,8 +8,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/trainings', pathMatch: 'full' },
-  { path: 'trainings', component: TrainingsComponent },
+  { path: '', redirectTo: '/trainings/week', pathMatch: 'full' },
+  { path: 'trainings', redirectTo: '/trainings/week', pathMatch: 'full' },
+  { path: 'trainings/week', component: TrainingsComponent },
+  { path: 'trainings/week/:year', component: TrainingsComponent },
+  { path: 'trainings/week/:year/:month', component: TrainingsComponent },
+  { path: 'trainings/week/:year/:month/:day', component: TrainingsComponent },
   { path: 'paddlers', component: PaddlersComponent },
   { path: 'leaderboard', component: LeaderboardComponent },
   { path: '**', component: PageNotFoundComponent },
