@@ -18,11 +18,11 @@
         </div>
 
         <!-- Programme -->
-        <div class="col-lg-2 py-2">
+        <div class="col-lg-2 col-sm-6 py-2">
             <div class="mat-subheading-1">Programme:</div>
             <div class="mat-body-1" style="white-space: pre-wrap;">{{ training.programme }}</div>
         </div>
-        <div class="col-lg-2 py-2">
+        <div class="col-lg-2 col-sm-6 py-2">
             <div class="mat-subheading-1">Venue & Time:</div>
             <div class="mat-body-1"><a href="#" class="text-secondary">{{ training.venue }}</a></div>
             <div class="mat-body-1">{{ training.startTime | date: 'shortTime' }} - {{ training.endTime | date: 'shortTime' }}</div>
