@@ -12,7 +12,7 @@
 <div class="container-fluid" style="margin-top: 70px;">
     <div class="row" *ngFor="let training of trainings">
         <!-- Headline -->
-        <div class="col-lg-1 pt-2">
+        <div class="col-lg-1 pt-2 bg-color-primary-grey">
             <div class="mat-caption">{{ training.startTime | date: 'EEE' }}</div>
             <div *ngIf="dateIsToday(training.startTime)" class="mat-headline color-secondary-blue">{{ training.startTime | date: 'd' }}</div>
             <div *ngIf="!dateIsToday(training.startTime)" class="mat-headline text-secondary">{{ training.startTime | date: 'd' }}</div>
