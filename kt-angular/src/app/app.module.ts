@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { MembersComponent } from './members/members.component';
@@ -14,7 +13,6 @@ import { TimeTrialsComponent } from './time-trials/time-trials.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LeaderboardComponent,
     PageNotFoundComponent,
     TrainingsComponent,
     MembersComponent,

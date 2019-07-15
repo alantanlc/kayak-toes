@@ -44,4 +44,8 @@ export class TrainingsComponent implements OnInit {
     return date.toLocaleDateString() === new Date().toLocaleDateString();
   }
 
+  getDate() {
+    return new Date();
+  }
+
 }

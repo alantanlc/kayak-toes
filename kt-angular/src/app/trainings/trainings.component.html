@@ -1,5 +1,5 @@
 <div class="container-fluid py-3 color-secondary-grey" style="position: fixed; background-color: #fff; z-index: 2; border-bottom: thin solid #eee; opacity: 0.95;">
-    <a mat-stroked-button routerLink="/trainings/week" matTooltip="Monday, July 15">Today</a> &nbsp;
+    <a mat-stroked-button routerLink="/trainings/week" matTooltip="{{ getDate() | date: 'EEEE, MMM d' }}">Today</a> &nbsp;
     <button mat-icon-button (click)="goToPreviousWeek()" matTooltip="Previous week">
         <mat-icon>chevron_left</mat-icon>
     </button>
@@ -25,7 +25,7 @@
         </div>
         <div class="col-lg-2 col-sm-6 py-2">
             <div class="mat-subheading-1">Venue & Time:</div>
-            <div class="mat-body-1"><a href="#" class="text-secondary">{{ training.venue }}</a></div>
+            <div class="mat-body-1"><a routerLink="." class="text-secondary">{{ training.venue }}</a></div>
             <div *ngIf="training.programme" class="mat-body-1">{{ training.startTime | date: 'shortTime' }} - {{ training.endTime | date: 'shortTime' }}</div>
             <div *ngIf="!training.programme" class="mat-body-1">-</div>
         </div>
