@@ -147,6 +147,13 @@ export const data = [
     endTime: new Date,
     attendees: attendees
   },
+  {
+    programme: "",
+    venue: '',
+    startTime: new Date('7/21/2019'),
+    endTime: '',
+    attendees: []
+  },
 ];
 
 @Component({
@@ -185,6 +192,10 @@ export class TrainingsComponent implements OnInit {
     console.log(year, month, day);
 
     this.router.navigate([`/trainings/week/${year}/${month}/${day}`]);
+  }
+
+  dateIsToday(date: Date) {
+    return date.toLocaleDateString() === new Date().toLocaleDateString();
   }
 
 }
