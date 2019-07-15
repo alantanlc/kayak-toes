@@ -9,7 +9,7 @@
         &nbsp; &nbsp;
         <a routerLink="/"><span class="example-app-name color-secondary-grey" matTooltip="Kayak Toes">Kayak Toes</span></a>
         <span class="example-spacer"></span>
-        <div class="mat-caption color-secondary-grey">NTU CANOE KAYAK SPRINT TEAM</div>
+        <div class="mat-caption color-secondary-grey" *ngIf="!mobileQuery.matches">NTU CANOE KAYAK SPRINT TEAM</div>
     </mat-toolbar>
 
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
