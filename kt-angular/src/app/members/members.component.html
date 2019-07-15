@@ -1,1 +1,23 @@
-<p>members works!</p>
+<div class="container-fluid mt-3">
+    <div class="mat-subheading-2">Admins</div>
+    <mat-divider></mat-divider>
+    <mat-list>
+        <mat-list-item *ngFor="let member of members" style="border-bottom: thin solid #eee;">
+            <img matListAvatar src="{{member.photo}}">
+            <h3 matLine><a routerLink="." class="color-secondary-blue">{{ member.firstName + ' ' + member.lastName }}</a></h3>
+            <p matLine class="color-secondary-grey">{{ '@' + member.displayName }}</p>
+        </mat-list-item>
+    </mat-list>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="mat-subheading-2">Members</div>
+    <mat-divider></mat-divider>
+    <mat-list>
+        <mat-list-item *ngFor="let member of members" style="border-bottom: thin solid #eee;">
+            <img matListAvatar src="{{member.photo}}">
+            <h3 matLine><a routerLink="." class="color-secondary-blue">{{ member.firstName + ' ' + member.lastName }}</a></h3>
+            <p matLine class="color-secondary-grey">{{ '@' + member.displayName }}</p>
+        </mat-list-item>
+    </mat-list>
+</div>
