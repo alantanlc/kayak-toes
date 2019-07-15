@@ -44,6 +44,10 @@ body {
     color: #181C62;
 }
 
+.color-secondary-blue {
+    color: #0054A6;
+}
+
 .color-primary-grey {
     color: #f3f5f8;
 }
@@ -53,10 +57,12 @@ body {
 }
 
 .bg-color-primary-white {
+    color: #0054A6 !important;
     background-color: #fff !important;
 }
 
 .bg-color-primary-red {
+    color: #fff !important;
     background-color: #D71440 !important;
 }
 
@@ -65,11 +71,7 @@ body {
     background-color: #0054A6 !important;
 }
 
-.bg-color-secondary-blue {
-    color: #fff !important;
-    background-color: #0054A6 !important;
-}
-
 .bg-color-primary-grey {
+    color: #0054A6 !important;
     background-color: #f3f5f8 !important;
 }
