@@ -1,4 +1,4 @@
-<div class="container-fluid mt-3">
+<div class="container mt-3">
     <div class="mat-subheading-2">Admins</div>
     <mat-divider></mat-divider>
     <mat-list>
@@ -8,10 +8,8 @@
             <p matLine class="color-secondary-grey">{{ '@' + member.displayName }}</p>
         </mat-list-item>
     </mat-list>
-</div>
 
-<div class="container-fluid mt-5">
-    <div class="mat-subheading-2">Members</div>
+    <div class="mat-subheading-2 mt-5">Members</div>
     <mat-divider></mat-divider>
     <mat-list>
         <mat-list-item *ngFor="let member of members" style="border-bottom: thin solid #eee;">

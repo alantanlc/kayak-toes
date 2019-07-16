@@ -1,4 +1,5 @@
-<div class="container-fluid py-3 color-secondary-grey" style="background-color: #fff; z-index: 2; border-bottom: thin solid #eee; opacity: 0.95;">
+<!-- Pagination -->
+<!-- <div class="container-fluid py-3 color-secondary-grey">
     <a mat-stroked-button routerLink="/trainings/week" matTooltip="{{ getDate() | date: 'EEEE, MMM d' }}">Today</a> &nbsp;
     <button mat-icon-button (click)="goToPreviousWeek()" matTooltip="Previous week">
         <mat-icon>chevron_left</mat-icon>
@@ -7,11 +8,12 @@
         <mat-icon>chevron_right</mat-icon>
     </button> &nbsp;
     <span class="text-secondary">July 2019</span>
-</div>
+</div> -->
 
+<!-- Trainings -->
 <div class="container-fluid">
-    <div class="row" *ngFor="let training of trainings">
-        <!-- Headline -->
+    <div class="row border-bottom-grey" *ngFor="let training of trainings">
+        <!-- Date -->
         <div class="col-lg-1 pt-2 bg-color-primary-grey">
             <div class="mat-caption">{{ training.startTime | date: 'EEE' }}</div>
             <div *ngIf="dateIsToday(training.startTime)" class="mat-headline color-primary-red">{{ training.startTime | date: 'd' }}</div>
