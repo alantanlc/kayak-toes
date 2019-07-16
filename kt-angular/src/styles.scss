@@ -48,8 +48,10 @@ body {
     color: #181C62;
 }
 
-.color-secondary-blue {
-    color: #0054A6;
+.color-secondary-blue,
+.link,
+.active {
+    color: #0054A6 !important;
 }
 
 .color-primary-grey {
@@ -81,4 +83,11 @@ body {
 
 .border-bottom-grey {
     border-bottom: thin solid #eee;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }

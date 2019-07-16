@@ -1,0 +1,11 @@
+<div class="container mt-3">
+    <div class="mat-subheading-2">Athletes</div>
+    <mat-divider></mat-divider>
+    <mat-list>
+        <mat-list-item *ngFor="let athlete of athletes" style="border-bottom: thin solid #eee;">
+            <img matListAvatar src="{{athlete.photo}}">
+            <h3 matLine><a routerLink="/athletes/{{athlete.displayName}}" class="color-secondary-blue">{{ athlete.firstName + ' ' + athlete.lastName }}</a></h3>
+            <p matLine class="color-secondary-grey">{{ '@' + athlete.displayName }}</p>
+        </mat-list-item>
+    </mat-list>
+</div>

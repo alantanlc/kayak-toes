@@ -27,7 +27,7 @@
         </div>
         <div class="col-lg-2 col-sm-6 py-2">
             <div class="mat-subheading-1">Venue & Time:</div>
-            <div class="mat-body-1"><a routerLink="." class="text-secondary">{{ training.venue }}</a></div>
+            <div class="mat-body-1"><a routerLink="." class="link">{{ training.venue }}</a></div>
             <div *ngIf="training.programme" class="mat-body-1">{{ training.startTime | date: 'shortTime' }} - {{ training.endTime | date: 'shortTime' }}</div>
             <div *ngIf="!training.programme" class="mat-body-1">-</div>
         </div>

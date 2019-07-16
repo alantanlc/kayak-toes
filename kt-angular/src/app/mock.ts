@@ -1,4 +1,4 @@
-export const members = [
+export const athletes = [
     {
         displayName: 'alan',
         firstName: 'Alan',

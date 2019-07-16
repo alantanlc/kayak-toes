@@ -7,16 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TrainingsComponent } from './trainings/trainings.component';
-import { MembersComponent } from './members/members.component';
-import { TimeTrialsComponent } from './time-trials/time-trials.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { BoatsComponent } from './boats/boats.component';
+import { AthletesComponent } from './athletes/athletes.component';
+import { AthleteDetailComponent } from './athlete-detail/athlete-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     TrainingsComponent,
-    MembersComponent,
-    TimeTrialsComponent,
+    LeaderboardComponent,
+    BoatsComponent,
+    AthletesComponent,
+    AthleteDetailComponent,
   ],
   imports: [
     BrowserModule,

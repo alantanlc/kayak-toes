@@ -13,8 +13,8 @@ export class AppComponent implements OnDestroy {
 
   navs = [
     { title: 'trainings', icon: 'event_note', route: 'trainings' },
-    { title: 'members', icon: 'wc', route: 'members' },
-    { title: 'time trials', icon: 'equalizer', route: 'timetrials' },
+    { title: 'athletes', icon: 'wc', route: 'athletes' },
+    { title: 'leaderboard', icon: 'equalizer', route: 'leaderboard' },
   ];
 
   private _mobileQueryListener: () => void;

@@ -1,0 +1,11 @@
+a.nav-link {
+    color: #333;
+    font-size: 13px;
+}
+
+a.active {
+    color: #333 !important;
+    & {
+        border-top: 2px solid #D71440 !important;
+    }
+}

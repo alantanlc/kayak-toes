@@ -6,8 +6,8 @@
 </nav>
 
 <nav class="nav sticky-top bg-white py-2" [class.justify-content-between]="mobileQuery.matches" [class.shadow-sm]="mobileQuery.matches" style="opacity: 0.95; border-bottom: thin solid #eee;">
-    <a *ngFor="let nav of navs" class="nav-link text-nowrap color-secondary-grey" routerLink="{{nav.route}}" matTooltip="{{nav.title | titlecase}}">
-        <mat-icon class="mr-2" style="vertical-align: middle; font-size: 22px;">{{nav.icon}}</mat-icon>
+    <a *ngFor="let nav of navs" class="nav-link color-secondary-grey" routerLink="{{nav.route}}" routerLinkActive="active" matTooltip="{{nav.title | titlecase}}">
+        <mat-icon [class.nav-mat-icon-mobile]="mobileQuery.matches" class="mr-2">{{nav.icon}}</mat-icon>
         <span *ngIf="!mobileQuery.matches" class="mr-4">{{nav.title | titlecase}}</span>
     </a>
 </nav>
