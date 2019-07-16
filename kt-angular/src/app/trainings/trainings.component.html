@@ -40,7 +40,7 @@
                 <div *ngFor="let att of training.attendees" matTooltip="{{ 'CA' + att.boat.ca }}">
                     <h5>
                         <span class="badge badge-pill badge-primary">
-                            {{ att.user.displayName | uppercase }} 
+                            {{ att.athlete.displayName | uppercase }} 
                             <span class="color-primary-blue">{{ att.boat.displayName | lowercase }}</span>
                         </span>
                     </h5>
