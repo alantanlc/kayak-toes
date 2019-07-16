@@ -1,11 +1,11 @@
-<nav class="navbar bg-color-primary-grey color-secondary-grey" [class.justify-content-center]="mobileQuery.matches">
-    <a class="navbar-brand color-secondary-grey" routerLink="/">
+<nav class="navbar color-secondary-grey border-bottom-grey" [class.justify-content-center]="mobileQuery.matches">
+    <a class="navbar-brand color-secondary-blue" routerLink="/">
         <img class="mr-3" src="./assets/images/kayak-red.png" width="32">KAYAK TOES
     </a>
     <div *ngIf="!mobileQuery.matches" class="mat-caption">NTU CANOE KAYAK SPRINT TEAM</div>
 </nav>
 
-<nav class="nav sticky-top bg-white py-2" [class.justify-content-between]="mobileQuery.matches" [class.shadow-sm]="mobileQuery.matches" style="opacity: 0.95; border-bottom: thin solid #eee;">
+<nav class="nav bg-white border-bottom-grey py-2" [class.sticky-top]="!mobileQuery.matches" [class.fixed-bottom]="mobileQuery.matches" [class.justify-content-between]="mobileQuery.matches" [class.shadow-sm]="mobileQuery.matches">
     <a *ngFor="let nav of navs" class="nav-link color-secondary-grey" routerLink="{{nav.route}}" routerLinkActive="active" matTooltip="{{nav.title | titlecase}}">
         <mat-icon [class.nav-mat-icon-mobile]="mobileQuery.matches" class="mr-2">{{nav.icon}}</mat-icon>
         <span *ngIf="!mobileQuery.matches" class="mr-4">{{nav.title | titlecase}}</span>
