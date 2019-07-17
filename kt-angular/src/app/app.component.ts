@@ -14,6 +14,7 @@ export class AppComponent implements OnDestroy {
   navs = [
     { title: 'trainings', icon: 'event_note', route: 'trainings' },
     { title: 'athletes', icon: 'wc', route: 'athletes' },
+    { title: 'boats', icon: 'directions_boat', route: 'boats' },
     { title: 'leaderboard', icon: 'equalizer', route: 'leaderboard' },
   ];
 
