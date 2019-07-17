@@ -9,6 +9,7 @@ export const athletes = [
         displayName: 'alan',
         firstName: 'Alan',
         lastName: 'Tan',
+        gender: 'm',
         affiliate: affiliate[1],
         photo: 'https://instagram.fsin8-1.fna.fbcdn.net/vp/f330f6ed6d22967be7680719f820bfee/5DA96223/t51.2885-19/10919640_1660085217570227_658502833_a.jpg?_nc_ht=instagram.fsin8-1.fna.fbcdn.net',
     },
@@ -16,6 +17,7 @@ export const athletes = [
         displayName: 'tessa',
         firstName: 'Tessa',
         lastName: 'Tan',
+        gender: 'f',
         affiliate: affiliate[0],
         photo: 'https://instagram.fsin8-1.fna.fbcdn.net/vp/d8ebc9448cc7b9d720e01b2a6602e3aa/5DC9B169/t51.2885-19/s150x150/15802701_281972905551188_4287046044866314240_a.jpg?_nc_ht=instagram.fsin8-1.fna.fbcdn.net',
     },
@@ -23,6 +25,7 @@ export const athletes = [
         displayName: 'loy',
         firstName: 'Bryan',
         lastName: 'Loy',
+        gender: 'm',
         affiliate: affiliate[0],
         photo: 'https://instagram.fsin8-1.fna.fbcdn.net/vp/6ab13aff08857b9cd27933f178563966/5DB316FE/t51.2885-19/s150x150/23421301_1459229850821830_354755863333830656_n.jpg?_nc_ht=instagram.fsin8-1.fna.fbcdn.net',
     },
@@ -30,6 +33,7 @@ export const athletes = [
         displayName: 'ch',
         firstName: 'Chi Hin',
         lastName: 'Chan',
+        gender: 'm',
         affiliate: affiliate[0],
         photo: 'https://instagram.fsin8-1.fna.fbcdn.net/vp/d1a0097fe49f4f20a28d4a20dc5dbbb7/5DECBA2B/t51.2885-19/s150x150/18513990_1840644779530604_5391084684136415232_a.jpg?_nc_ht=instagram.fsin8-1.fna.fbcdn.net',
     },
@@ -37,6 +41,7 @@ export const athletes = [
         displayName: 'wc',
         firstName: 'Wang Cong',
         lastName: 'Heng',
+        gender: 'm',
         affiliate: affiliate[0],
         photo: 'https://instagram.fsin8-1.fna.fbcdn.net/vp/f441c8241df23da86bfcab096479cace/5DAED0A1/t51.2885-19/s150x150/58410232_816038482109802_2832616165337989120_n.jpg?_nc_ht=instagram.fsin8-1.fna.fbcdn.net',
     },
@@ -44,6 +49,7 @@ export const athletes = [
         displayName: 'benho',
         firstName: 'Benjamin',
         lastName: 'Ho',
+        gender: 'm',
         affiliate: affiliate[0],
         photo: 'https://instagram.fsin8-1.fna.fbcdn.net/vp/25bf2e97e638da132b82eee660d6042c/5DB69A31/t51.2885-19/s150x150/39269295_240415863339908_2487338109415456768_n.jpg?_nc_ht=instagram.fsin8-1.fna.fbcdn.net',
     }
@@ -188,8 +194,14 @@ export const trainings = [
 
 export const leaderboard = [
     {
-        athlete: athletes[0],
-        category: '200m',
+        athlete: [
+            athletes[0],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '200m',
+            gender: 'm'
+        },
         result: '41.1',
         training: trainings[3],
         dateTime: new Date('7/1/2019'),
@@ -197,8 +209,15 @@ export const leaderboard = [
         boat: boats[0],
     },
     {
-        athlete: athletes[1],
-        category: '200m',
+        athlete: [
+            athletes[0],
+            athletes[1],
+        ],
+        category: {
+            boat: 'k2',
+            distance: '200m',
+            gender: 'f'
+        },
         result: '38.2',
         training: trainings[3],
         dateTime: new Date,
@@ -206,8 +225,14 @@ export const leaderboard = [
         boat: boats[1],
     },
     {
-        athlete: athletes[2],
-        category: '200m',
+        athlete: [
+            athletes[2],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '200m',
+            gender: 'm'
+        },
         result: '30.3',
         training: trainings[3],
         dateTime: new Date('7/1/2019'),
@@ -215,8 +240,14 @@ export const leaderboard = [
         boat: boats[2],
     },
     {
-        athlete: athletes[3],
-        category: '200m',
+        athlete: [
+            athletes[3],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '200m',
+            gender: 'm'
+        },
         result: '39.4',
         training: trainings[3],
         dateTime: new Date,
@@ -224,8 +255,14 @@ export const leaderboard = [
         boat: boats[3],
     },
     {
-        athlete: athletes[4],
-        category: '200m',
+        athlete: [
+            athletes[4],
+        ],
+        category: {
+            boat: 'k4',
+            distance: '200m',
+            gender: 'm'
+        },
         result: '37.5',
         training: trainings[3],
         dateTime: new Date,
@@ -233,8 +270,14 @@ export const leaderboard = [
         boat: boats[4],
     },
     {
-        athlete: athletes[5],
-        category: '200m',
+        athlete: [
+            athletes[5],
+        ],
+        category: {
+            boat: 'c1',
+            distance: '200m',
+            gender: 'm'
+        },
         result: '40.6',
         training: trainings[3],
         dateTime: new Date,
@@ -243,8 +286,14 @@ export const leaderboard = [
     },
     
     {
-        athlete: athletes[0],
-        category: '500m',
+        athlete: [
+            athletes[0],
+        ],
+        category: {
+            boat: 'c2',
+            distance: '500m',
+            gender: 'm'
+        },
         result: '120',
         training: trainings[3],
         dateTime: new Date,
@@ -252,8 +301,14 @@ export const leaderboard = [
         boat: boats[6],
     },
     {
-        athlete: athletes[1],
-        category: '500m',
+        athlete: [
+            athletes[1],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '500m',
+            gender: 'f'
+        },
         result: '132',
         training: trainings[3],
         dateTime: new Date,
@@ -261,8 +316,14 @@ export const leaderboard = [
         boat: boats[7],
     },
     {
-        athlete: athletes[2],
-        category: '500m',
+        athlete: [
+            athletes[2],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '500m',
+            gender: 'm'
+        },
         result: '123',
         training: trainings[3],
         dateTime: new Date,
@@ -270,8 +331,14 @@ export const leaderboard = [
         boat: boats[8],
     },
     {
-        athlete: athletes[3],
-        category: '500m',
+        athlete: [
+            athletes[3],
+        ],
+        category: {
+            boat: 'c1',
+            distance: '500m',
+            gender: 'm'
+        },
         result: '130',
         training: trainings[3],
         dateTime: new Date,
@@ -279,8 +346,14 @@ export const leaderboard = [
         boat: boats[9],
     },
     {
-        athlete: athletes[4],
-        category: '500m',
+        athlete: [
+            athletes[4],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '500m',
+            gender: 'm'
+        },
         result: '119',
         training: trainings[3],
         dateTime: new Date,
@@ -288,8 +361,14 @@ export const leaderboard = [
         boat: boats[10],
     },
     {
-        athlete: athletes[5],
-        category: '500m',
+        athlete: [
+            athletes[5],
+        ],
+        category: {
+            boat: 'c1',
+            distance: '500m',
+            gender: 'm'
+        },
         result: '124',
         training: trainings[3],
         dateTime: new Date,
@@ -298,8 +377,14 @@ export const leaderboard = [
     },
 
     {
-        athlete: athletes[0],
-        category: '1000m',
+        athlete: [
+            athletes[0],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '1000m',
+            gender: 'm'
+        },
         result: '240',
         training: trainings[3],
         dateTime: new Date,
@@ -307,8 +392,14 @@ export const leaderboard = [
         boat: boats[1],
     },
     {
-        athlete: athletes[1],
-        category: '1000m',
+        athlete: [
+            athletes[1],
+        ],
+        category: {
+            boat: 'k2',
+            distance: '1000m',
+            gender: 'f'
+        },
         result: '250',
         training: trainings[3],
         dateTime: new Date,
@@ -316,8 +407,14 @@ export const leaderboard = [
         boat: boats[2],
     },
     {
-        athlete: athletes[2],
-        category: '1000m',
+        athlete: [
+            athletes[2],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '1000m',
+            gender: 'm'
+        },
         result: '260',
         training: trainings[3],
         dateTime: new Date,
@@ -326,8 +423,14 @@ export const leaderboard = [
     },
 
     {
-        athlete: athletes[0],
-        category: '2km',
+        athlete: [
+            athletes[0],
+        ],
+        category: {
+            boat: 'k4',
+            distance: '2km',
+            gender: 'm'
+        },
         result: '41.1',
         training: trainings[3],
         dateTime: new Date('7/1/2019'),
@@ -335,8 +438,14 @@ export const leaderboard = [
         boat: boats[0],
     },
     {
-        athlete: athletes[1],
-        category: '2km',
+        athlete: [
+            athletes[1],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '2km',
+            gender: 'f'
+        },
         result: '38.2',
         training: trainings[3],
         dateTime: new Date,
@@ -344,8 +453,14 @@ export const leaderboard = [
         boat: boats[1],
     },
     {
-        athlete: athletes[2],
-        category: '2km',
+        athlete: [
+            athletes[2],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '2km',
+            gender: 'm'
+        },
         result: '30.3',
         training: trainings[3],
         dateTime: new Date('7/1/2019'),
@@ -353,8 +468,14 @@ export const leaderboard = [
         boat: boats[2],
     },
     {
-        athlete: athletes[3],
-        category: '2km',
+        athlete: [
+            athletes[3],
+        ],
+        category: {
+            boat: 'k4',
+            distance: '2km',
+            gender: 'm'
+        },
         result: '39.4',
         training: trainings[3],
         dateTime: new Date,
@@ -362,8 +483,14 @@ export const leaderboard = [
         boat: boats[3],
     },
     {
-        athlete: athletes[4],
-        category: '2km',
+        athlete: [
+            athletes[4],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '2km',
+            gender: 'm'
+        },
         result: '37.5',
         training: trainings[3],
         dateTime: new Date,
@@ -371,8 +498,14 @@ export const leaderboard = [
         boat: boats[4],
     },
     {
-        athlete: athletes[5],
-        category: '2km',
+        athlete: [
+            athletes[5],
+        ],
+        category: {
+            boat: 'k2',
+            distance: '2km',
+            gender: 'm'
+        },
         result: '40.6',
         training: trainings[3],
         dateTime: new Date,
@@ -381,8 +514,14 @@ export const leaderboard = [
     },
     
     {
-        athlete: athletes[0],
-        category: '2km',
+        athlete: [
+            athletes[0],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '2km',
+            gender: 'm'
+        },
         result: '120',
         training: trainings[3],
         dateTime: new Date,
@@ -390,8 +529,14 @@ export const leaderboard = [
         boat: boats[6],
     },
     {
-        athlete: athletes[1],
-        category: '2km',
+        athlete: [
+            athletes[1],
+        ],
+        category: {
+            boat: 'k1',
+            distance: '2km',
+            gender: 'f'
+        },
         result: '132',
         training: trainings[3],
         dateTime: new Date,
@@ -399,8 +544,14 @@ export const leaderboard = [
         boat: boats[7],
     },
     {
-        athlete: athletes[2],
-        category: '2km',
+        athlete: [
+            athletes[2],
+        ],
+        category: {
+            boat: 'k2',
+            distance: '2km',
+            gender: 'm'
+        },
         result: '123',
         training: trainings[3],
         dateTime: new Date,
@@ -411,10 +562,17 @@ export const leaderboard = [
 ];
 
 export const reference = [
-    { category: 'category', key: '200m', value: '200m' },
-    { category: 'category', key: '500m', value: '500m' },
-    { category: 'category', key: '1000m', value: '1000m' },
-    { category: 'category', key: '2km', value: '2km' },
-    { category: 'category', key: '5km', value: '5km' },
-    { category: 'category', key: '10km', value: '10km' },
+    { category: 'boat', key: 'k1', value: 'k1' },
+    { category: 'boat', key: 'k2', value: 'k2' },
+    { category: 'boat', key: 'k4', value: 'k4' },
+    { category: 'boat', key: 'c1', value: 'c1' },
+    { category: 'boat', key: 'c2', value: 'c2' },
+    { category: 'distance', key: '200m', value: '200m' },
+    { category: 'distance', key: '500m', value: '500m' },
+    { category: 'distance', key: '1000m', value: '1000m' },
+    { category: 'distance', key: '2km', value: '2km' },
+    { category: 'distance', key: '5km', value: '5km' },
+    { category: 'distance', key: '10km', value: '10km' },
+    { category: 'gender', key: 'male', value: 'm' },
+    { category: 'gender', key: 'female', value: 'f' },
 ];
