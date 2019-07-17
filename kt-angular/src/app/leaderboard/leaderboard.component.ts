@@ -17,6 +17,10 @@ export class LeaderboardComponent implements OnInit {
   genders: any[];
   distances: any[];
 
+  activeBoatCategory: string;
+  activeGenderCategory: string;
+  activeDistanceCategory: string;
+
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   constructor() { }
@@ -26,25 +30,41 @@ export class LeaderboardComponent implements OnInit {
     this.genders = reference.filter(ref => ref.category === 'gender');
     this.distances = reference.filter(ref => ref.category === 'distance');
 
-    this.dataSource = new MatTableDataSource(leaderboard.filter(
-      record => 
-        record.category.boat === this.boats[0].value
-        && record.category.gender === this.genders[0].value
-        && record.category.distance === this.distances[0].value
-      ));
+    // Update active categories
+    this.activeBoatCategory = this.boats[0].value;
+    this.activeGenderCategory = this.genders[0].value;
+    this.activeDistanceCategory = this.distances[0].value;
+
+    // Initialize dataSource
+    this.dataSource = new MatTableDataSource();
     this.dataSource.sort = this.sort;
+
+    // Update filterRecordsByCategories
+    this.filterRecordsByCategories();
+  }
+
+  filterRecordsByCategories() {
+    this.dataSource.data = leaderboard.filter(
+      record =>
+        record.category.boat === this.activeBoatCategory
+        && record.category.gender === this.activeGenderCategory
+        && record.category.distance === this.activeDistanceCategory
+    );
   }
   
   filterByBoat(boat: string) {
-    this.dataSource.data = leaderboard.filter(record => record.category.boat === boat);
+    this.activeBoatCategory = boat;
+    this.filterRecordsByCategories();
   }
   
   filterByGender(gender: string) {
-    this.dataSource.data = leaderboard.filter(record => record.category.gender === gender);
+    this.activeGenderCategory = gender;
+    this.filterRecordsByCategories();
   }
 
   filterByDistance(distance: string) {
-    this.dataSource.data = leaderboard.filter(record => record.category.distance === distance);
+    this.activeDistanceCategory = distance;
+    this.filterRecordsByCategories();
   }
 
   isFirstBoat(boat: any) {

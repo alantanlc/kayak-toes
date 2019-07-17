@@ -487,9 +487,9 @@ export const leaderboard = [
             athletes[4],
         ],
         category: {
-            boat: 'k1',
-            distance: '2km',
-            gender: 'm'
+            boat: 'c1',
+            distance: '5km',
+            gender: 'f'
         },
         result: '37.5',
         training: trainings[3],
@@ -575,4 +575,5 @@ export const reference = [
     { category: 'distance', key: '10km', value: '10km' },
     { category: 'gender', key: 'male', value: 'm' },
     { category: 'gender', key: 'female', value: 'f' },
+    { category: 'gender', key: 'mixed', value: 'mixed' }
 ];

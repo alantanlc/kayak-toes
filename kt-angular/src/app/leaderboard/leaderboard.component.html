@@ -4,9 +4,7 @@
 
     <!-- Boat filter -->
     <ul class="nav mt-3" *ngIf="boats">
-        <li class="nav-item">
-            <span class="badge badge-secondary">Boat</span>
-        </li>
+        <li class="nav-item mat-caption" style="width: 50px;">Boat</li>
         <li class="nav-item">
             <a *ngFor="let boat of boats" [class.active]="isFirstBoat(boat)" class="nav-link d-inline" id="{{boat.value}}-tab" data-toggle="tab" (click)="filterByBoat(boat.value)" href="#" role="tab">
                 {{boat.key|uppercase}}
@@ -16,27 +14,25 @@
 
     <!-- Gender filter -->
     <ul class="nav mt-3" *ngIf="genders">
-        <li class="nav-item">
-            <span class="badge badge-secondary">Gender</span>
-        </li>
+        <li class="nav-item mat-caption" style="width: 50px;">Gender</li>
         <li class="nav-item">
             <a *ngFor="let gender of genders" [class.active]="isFirstGender(gender)" class="nav-link d-inline" id="{{gender.value}}-tab" data-toggle="tab" (click)="filterByGender(gender.value)" href="#" role="tab">
-                {{gender.value|uppercase}}
+                {{gender.value|titlecase}}
             </a>
         </li>
     </ul>
 
     <!-- Distance filter -->
     <ul class="nav mt-3" *ngIf="distances">
-        <li class="nav-item">
-            <span class="badge badge-secondary">Distance</span>
-        </li>
+        <li class="nav-item mat-caption" style="width: 50px;">Distance</li>
         <li class="nav-item">
             <a *ngFor="let distance of distances" [class.active]="isFirstDistance(distance)" class="nav-link d-inline" id="{{distance.value}}-tab" data-toggle="tab" (click)="filterByDistance(distance.value)" href="#" role="tab">
                 {{distance.key}}
             </a>
         </li>
     </ul>
+
+    <br>
 
     <!-- Mat data table -->
     <table mat-table [dataSource]="dataSource" matSort matSortActive="result" matSortDirection="asc" class="mat-elevation-z0">
